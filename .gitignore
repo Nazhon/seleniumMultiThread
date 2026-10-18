@@ -1,0 +1,8 @@
+/test-output/
+/target/
+testng.xml
+/src/main/test/java/tia/BaseTest.java
+/.gitignore/workflows/
+/bin/
+*.class
+*.png

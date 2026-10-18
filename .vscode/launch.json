@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug Main Class",
+            "request": "launch",
+            "mainClass": "main.java.config.SuiteListener",  // Reemplaza con la clase principal correcta
+            "projectName": "main-project",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        }
+    ]
+}

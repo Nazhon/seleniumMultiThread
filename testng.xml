@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite Proyecto ALMA" parallel="classes" thread-count="2">
+	
+
+	<!--parallel="classes" thread-count="2" agregar eso en el suite para ejecutar 
+		más de una clase -->
+	
+	
+	<listeners>
+		<listener class-name="main.java.config.SuiteListener"></listener>
+	</listeners>
+	
+	<test name="En construccion" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="test.java.portalSB.emision.OncologicoPortalSBTests">
+				<methods>
+					<include name="ATMOQA130" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="En construccion" enabled="true">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="test.java.tia.polizas.HogarFullTests">
+				<methods>
+					<include name="ATMOQA10" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+		<test name="EmisionOncologicoPortalPrivado" enabled="false">
+			<parameter name="browserName" value="chrome" />
+			<classes>
+				<class name="test.java.tia.polizas.AutoLightTests" />
+				<class name="test.java.tia.siniestros.AutoLightTests" />
+				<class name="test.java.tia.endosos.AutoLightTests" />
+				<class name="test.java.tia.cancelacion.AutoLightTests" />
+			</classes>
+		</test>
+	
+	
+	<test name="Oncologico" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="test.java.tia.polizas.MuerteAccidentalTests">
+				<methods>
+					<include name="ATMOQA12" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+
+	<test name="PortalSB_AP" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="test.java.portalSB.emision.APPortalSBTests">
+				<methods>
+					<include name="ATMOQA127" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="En construccion1" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="test.java.tia.polizas.HogarFullTests">
+				<methods>
+					<include name="ATMOQA211" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="EmisionOncologicoPortalPrivado" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class
+				name="test.java.portalPrivado.emision.OncologicoPortalPrivadoTests" />
+			<class
+				name="test.java.portalPrivado.emision.APPortalPrivadoTests" />
+		</classes>
+	</test>
+
+	<test name="PortalSB" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class
+				name="test.java.portalSB.emision.OncologicoPortalSBTests">
+				<methods>
+					<include name="ATMOQA130" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="cons" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="test.java.tia.endosos.HogarFullTests">
+				<methods>
+					<include name="ATMOQA85" />
+					<include name="ATMOQA86" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="EmisionMascotaSaludPortalMarsh" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class
+				name="test.java.portalMarsh.emision.OncologicoPortalMarshTests">
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="EmisionMascotaSaludPortalPrivado" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class
+				name="test.java.portalPrivado.emision.MascotaSaludPortalPrivadoTests" />
+			<class
+				name="test.java.portalPrivado.emision.APPortalPrivadoTests" />
+		</classes>
+	</test>
+
+
+	<test name="SiniestrosProductosTIA" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="test.java.tia.polizas.MascotasSaludTests" />
+			<class name="test.java.tia.polizas.MascotasResponsableTests" />
+			<class name="test.java.tia.polizas.OncologicoTests" />
+			<class name="test.java.tia.polizas.HogarFullTests" />
+			<class name="test.java.tia.polizas.MuerteAccidentalTests" />
+			<class name="test.java.tia.polizas.AutoLightTests" />
+			<class name="test.java.tia.polizas.GarantiaExtendidaTests" />
+			<class name="test.java.tia.polizas.PagoManualTests" />
+			<class name="test.java.tia.polizas.RGMTests" />
+			<class name="test.java.tia.polizas.ViajesCorporativoTests" />
+			<class name="test.java.tia.polizas.ViajesIndividualesTests" />
+			<class name="test.java.tia.renovacion.HogarFullTests" />
+			<class name="test.java.tia.renovacion.MascotasSaludTests" />
+			<class name="test.java.tia.renovacion.MascotasResponsableTests" />
+			<class name="test.java.tia.renovacion.MuerteAccidentalTests" />
+			<class name="test.java.tia.renovacion.OncologicoTests" />
+			<class name="test.java.tia.siniestros.AutoLightTests" />
+			<class name="test.java.tia.siniestros.HogarFullTests" />
+			<class name="test.java.tia.siniestros.MascotasResponsableTests" />
+			<class name="test.java.tia.siniestros.MascotasSaludTests" />
+			<class name="test.java.tia.siniestros.MuerteAccidentalTests" />
+			<class name="test.java.tia.siniestros.OncologicoTests" />
+			<class name="test.java.tia.siniestros.SoapTests" />
+			<class name="test.java.tia.siniestros.ViajesCorporativoTests" />
+			<class name="test.java.tia.endosos.AutoLightTests" />
+			<class name="test.java.tia.endosos.HogarFullTests" />
+			<class name="test.java.tia.endosos.MascotasResponsableTests" />
+			<class name="test.java.tia.endosos.MascotasSaludTests" />
+			<class name="test.java.tia.endosos.MuerteAccidentalTests" />
+			<class name="test.java.tia.endosos.OncologicoTests" />
+			<class name="test.java.tia.endosos.RGMTests" />
+			<class name="test.java.tia.endosos.SoapTests" />
+			<class name="test.java.tia.cancelacion.AutoLightTests" />
+			<class name="test.java.tia.cancelacion.HogarFullTests" />
+			<class
+				name="test.java.tia.cancelacion.MascotasResponsableTests" />
+			<class name="test.java.tia.cancelacion.MascotasSaludTests" />
+			<class name="test.java.tia.cancelacion.MuerteAccidentalTests" />
+			<class name="test.java.tia.cancelacion.OncologicoTests" />
+
+
+		</classes>
+	</test>
+
+
+	<test name="EndosoProductosTIA" enabled="false">
+		<parameter name="browserName" value="chrome" />
+
+		<classes>
+			<class name="test.java.tia.endosos.MascotasSaludTests" />
+			<class name="test.java.tia.endosos.OncologicoTests" />
+			<class name="test.java.tia.endosos.HogarFullTests" />
+			<class name="test.java.tia.endosos.MuerteAccidentalTests" />
+		</classes>
+	</test>
+
+
+	<test name="CancelacionProductosTIA" enabled="false">
+		<parameter name="browserName" value="chrome" />
+
+		<classes>
+			<class name="test.java.tia.cancelacion.MascotasSaludTests" />
+			<class
+				name="test.java.tia.cancelacion.MascotasResponsableTests" />
+			<class name="test.java.tia.cancelacion.OncologicoTests" />
+			<class name="test.java.tia.cancelacion.HogarFullTests" />
+			<class name="test.java.tia.cancelacion.MuerteAccidentalTests" />
+		</classes>
+	</test>
+
+
+	<test name="RenovacionProductosTIA" enabled="false">
+		<parameter name="browserName" value="chrome" />
+
+		<classes>
+			<class name="test.java.tia.renovacion.HogarFullTests" />
+			<class name="test.java.tia.renovacion.MuerteAccidentalTests" />
+		</classes>
+	</test>
+
+	<test name="EmisionMascotaCorredorAON" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class
+				name="test.java.portalCorredorAON.emision.MascotaColectivoCorredorAONTests">
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="TiaDigitalReclamos" enabled="false">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="test.java.tiadigital.ReclamosTest">
+
+			</class>
+		</classes>
+	</test>
+</suite>
